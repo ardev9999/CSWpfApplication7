@@ -5,8 +5,32 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CSWpfApplication7"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
+        Title="MainWindow" Height="350" Width="500">
+    <Grid Background="#FFDE0F0F">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="491*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <WrapPanel Grid.ColumnSpan="3" Margin="0,0,0,0" HorizontalAlignment="Center">
+            <WrapPanel Orientation="Vertical" Margin="0,0,100,0" Height="325">
+                <Label Content="First Name:" HorizontalContentAlignment="Center" Margin="0,50,0,0" Background="{x:Null}" Foreground="#FFFFFCFC" Width="70"/>
+                <TextBox Margin="0,0,0,0" Height="18" Width="101" Background="#FF0E0101" BorderBrush="Black"/>
+                <Label Content="Last Name:" HorizontalContentAlignment="Center" Margin="0,20,0,0" Background="{x:Null}" Foreground="#FFFFFCFC" Width="70"/>
+                <TextBox Margin="0,5,0,0" Background="#FF0E0101" BorderBrush="Black" Width="101"/>
+                <Label Content="Birth Date:" HorizontalContentAlignment="Center" Margin="0,20,0,0" Background="{x:Null}" Foreground="#FFFFFCFC"/>
+                <TextBox Margin="0,5,0,0" Background="#FF0E0101" BorderBrush="Black" Width="101"/>
+            </WrapPanel>
+            <WrapPanel Orientation="Vertical" Margin="0">
+                <Label Content="First Name:" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Margin="0,50,0,0" Background="{x:Null}" Foreground="#FFFFFCFC"/>
+                <TextBox Margin="0,0,0,0" Height="18" Width="101" Background="#FF0E0101" BorderBrush="Black"/>
+                <Label Content="Last Name:" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Margin="0,20,0,0" Background="{x:Null}" Foreground="#FFFFFCFC" Width="70"/>
+                <TextBox Margin="0,5,0,0" Background="#FF0E0101" BorderBrush="#FF000104"/>
+                <Label Content="Birth Date:" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Margin="0,20,0,0" Background="{x:Null}" Foreground="#FFFFFCFC" Width="70"/>
+                <TextBox Margin="0,5,0,0" Background="#FF0E0101" BorderBrush="Black"/>
+
+            </WrapPanel>
+        </WrapPanel>
+
     </Grid>
 </Window>
